@@ -1,1 +1,3 @@
-git
+creds.py
+*.pyc
+*.html
