@@ -20,7 +20,7 @@ scope = 'https://www.googleapis.com/auth/calendar'
 #python script fires something off
 #now the actual calendar API actions...
 
-working_calendar_id = 'kyle@wellandlighthouse.com'
+working_calendar_id = 'foo'
 
 payload = {'access_token':access_token}
 calendar = requests.get('https://www.googleapis.com/calendar/v3/calendars/'+working_calendar_id, data=payload)
