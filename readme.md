@@ -40,3 +40,7 @@ Barebones API call in place to grab events that match a variable word from a var
 6/10/2014 -- 15:50
 ------------------
 Update event fucntionality problematic--PATCH request is still erroring.
+
+6/10/2014 -- 18:30
+------------------
+Authentication uses Bearer Token headers instead of url query parameters.
