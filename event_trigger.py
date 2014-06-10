@@ -25,11 +25,14 @@ working_calendar_id = creds.working_calendar_id
 
 payload = {'access_token':access_token}
 
-search_query = 'Winner'
-startDate = str(datetime.datetime(2014,06,10))
-raw_input()
+search_query = 'Winners'
+startDate = str(datetime.date(2013,06,10))+'T00:00:00-05:00:00'
+endDate = str(datetime.date(2014,06,14))+'T00:00:00-05:00:00'
+print startDate, endDate
 
-query_params = '?access_token='+access_token+'&q='+search_query+'&timeMax=2014-06-09T00:00:00'
+#query_params = '?access_token='+access_token+'&q='+search_query+'&timeMax='+endDate+'&timeMin='+startDate
+query_params = '?access_token='+access_token+'&timeMax='+endDate+'&timeMin='+startDate+'&singleEvents=True&q='+search_query
+
 
 calendar = requests.get('https://www.googleapis.com/calendar/v3/calendars/'+working_calendar_id+'/events'+query_params)
 
