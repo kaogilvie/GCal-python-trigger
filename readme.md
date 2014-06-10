@@ -36,3 +36,7 @@ Authentication flow for Google Calendar API for desktop applications added up to
 6/10/2014 -- 11:30
 ------------------
 Barebones API call in place to grab events that match a variable word from a variable time period
+
+6/10/2014 -- 15:50
+------------------
+Update event fucntionality problematic--PATCH request is still erroring.
