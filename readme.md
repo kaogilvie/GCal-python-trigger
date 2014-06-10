@@ -32,3 +32,7 @@ Initial commit
 6/5/2014 -- 11:00
 -----------------
 Authentication flow for Google Calendar API for desktop applications added up to "request_token".
+
+6/10/2014 -- 11:30
+------------------
+Barebones API call in place to grab events that match a variable word from a variable time period
