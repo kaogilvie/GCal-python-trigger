@@ -44,3 +44,7 @@ Update event fucntionality problematic--PATCH request is still erroring.
 6/10/2014 -- 18:30
 ------------------
 Authentication uses Bearer Token headers instead of url query parameters.
+
+6/11/2014 -- 17:00
+------------------
+POST and PATCH requests use 'Content-type: application/json' headers in order to actually update Google Calendar (IMPORTANT!!). Application works with hardcoded variables [should be passed in from python function].
