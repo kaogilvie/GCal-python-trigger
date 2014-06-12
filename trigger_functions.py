@@ -35,7 +35,7 @@ def create_event(custom_headers, create_event_data):
 	r_dict = json.loads(r.content)
 	print "Created new event; named: "+r_dict['summary']+"."
 
-def update_event(response, custom_headers, working_calendar_id):
+def update_event(response, update_events_dict, custom_headers, working_calendar_id):
 	#updates an existing event
 	event_id = response['items'][0]['id']
 	patch_url = 'https://www.googleapis.com/calendar/v3/calendars/'+working_calendar_id+'/events/'+event_id
@@ -44,7 +44,7 @@ def update_event(response, custom_headers, working_calendar_id):
 	url_dict = json.loads(url.content)
 	print "Updated event to "+url_dict['summary']+'.'
 
-def update_events(response, update_event_dict, working_calendar_id):
+def update_events(response, custom_headers, update_event_dict, working_calendar_id):
 	#updates all events in the response object from get_events_calendar
 	for event in response['items':]
 
