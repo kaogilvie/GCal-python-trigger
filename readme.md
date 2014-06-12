@@ -22,29 +22,43 @@ Must run "trig_init.py" first to obtain access.
 * Copy refresh token at end of script
 * Paste into "creds.py" (a non-git file)
 
+event_trigger.py & using the functions...
+* Easy to nest the functions found in trigger_functions.py for exquisite workflow control
+* event_triggers.py provides a few examples of workflows
+* configuration.py allows for control of parameters of UPDATING, CREATING and SEARCHING for events
+* Searching for events with the configuration.py SEARCH dictionary allows you to control the events you update
+* CREATE dictionary in configuration.py allows control of the details of created events
+* UPDATE dictionary allows control of what details get overwritten about an event on update
+* All dictionaries in configuration.py are great endpoints for python script variables, allowing dynamic updating and creation of events
+
+
 CHANGELOG
 =========
 
-5/30/2014 -- 17:00
+5/30/2014 -- 17:00 -- V0.1
 ------------------
 Initial commit
 
-6/5/2014 -- 11:00
+6/5/2014 -- 11:00 -- V0.2
 -----------------
 Authentication flow for Google Calendar API for desktop applications added up to "request_token".
 
-6/10/2014 -- 11:30
+6/10/2014 -- 11:30 -- V0.3
 ------------------
 Barebones API call in place to grab events that match a variable word from a variable time period
 
-6/10/2014 -- 15:50
+6/10/2014 -- 15:50 -- V0.4
 ------------------
 Update event fucntionality problematic--PATCH request is still erroring.
 
-6/10/2014 -- 18:30
+6/10/2014 -- 18:30 -- V0.5
 ------------------
 Authentication uses Bearer Token headers instead of url query parameters.
 
-6/11/2014 -- 17:00
+6/11/2014 -- 17:00 -- V0.6
 ------------------
 POST and PATCH requests use 'Content-type: application/json' headers in order to actually update Google Calendar (IMPORTANT!!). Application works with hardcoded variables [should be passed in from python function].
+
+6/12/2014 -- 14:39 -- V1.0
+-------------------------
+Functional & functioned script. Parameters clear--ready for import into any python script!! (Readme updated as well).
