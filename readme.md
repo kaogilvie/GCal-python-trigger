@@ -1,15 +1,17 @@
+#GEvent Trigger
+
 Google Calendar API program that will trigger the creation of an event (or add to an existing event, if it exists) on the registered users calendar. Designed to bind to the end of a python script.
 
 Uses the requests library on purpose to by-pass the confusing OAuth2 library and even more confusing errors raised when following the OAuth2 library documentation from Google. Simpler is more pythonic and other platitudes.
 
-USAGE
-=====
+##USAGE
 
-Must create "creds.py" -- a non-git file that contains your credentials for this project from the developers console [here](http://console.developers.google.com).*
+
+Must create "credentials.py" -- a non-git file that contains your credentials for this project from the developers console [here](http://console.developers.google.com).*
 
 *Meaning yes, you must register this project with the developers console.
 
-Creds.py should contain the following:
+Credentials.py should contain the following:
 * client_id
 * cient_secret
 * redirect_uri
@@ -32,33 +34,33 @@ event_trigger.py & using the functions...
 * All dictionaries in configuration.py are great endpoints for python script variables, allowing dynamic updating and creation of events
 
 
-CHANGELOG
-=========
+##CHANGELOG
 
-5/30/2014 -- 17:00 -- V0.1
-------------------
+
+###5/30/2014 -- 17:00 -- V0.1
+
 Initial commit
 
-6/5/2014 -- 11:00 -- V0.2
------------------
+###6/5/2014 -- 11:00 -- V0.2
+
 Authentication flow for Google Calendar API for desktop applications added up to "request_token".
 
-6/10/2014 -- 11:30 -- V0.3
-------------------
+###6/10/2014 -- 11:30 -- V0.3
+
 Barebones API call in place to grab events that match a variable word from a variable time period
 
-6/10/2014 -- 15:50 -- V0.4
-------------------
+###6/10/2014 -- 15:50 -- V0.4
+
 Update event fucntionality problematic--PATCH request is still erroring.
 
-6/10/2014 -- 18:30 -- V0.5
-------------------
+###6/10/2014 -- 18:30 -- V0.5
+
 Authentication uses Bearer Token headers instead of url query parameters.
 
-6/11/2014 -- 17:00 -- V0.6
-------------------
+###6/11/2014 -- 17:00 -- V0.6
+
 POST and PATCH requests use 'Content-type: application/json' headers in order to actually update Google Calendar (IMPORTANT!!). Application works with hardcoded variables [should be passed in from python function].
 
-6/12/2014 -- 14:39 -- V1.0
--------------------------
+###6/12/2014 -- 14:39 -- V1.0
+
 Functional & functioned script. Parameters clear--ready for import into any python script!! (Readme updated as well).
