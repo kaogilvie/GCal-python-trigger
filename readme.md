@@ -5,7 +5,7 @@ Google Calendar API program that will trigger the creation of an event (or add t
 Uses the requests library on purpose to by-pass the confusing OAuth2 library and even more confusing errors raised when following the OAuth2 library documentation from Google. Simpler is more pythonic and other platitudes.
 
 ##USAGE
-
+Very functional, very class-less. Oh, the places we go...
 
 Must create "credentials.py" -- a non-git file that contains your credentials for this project from the developers console [here](http://console.developers.google.com).*
 
@@ -64,3 +64,7 @@ POST and PATCH requests use 'Content-type: application/json' headers in order to
 ###6/12/2014 -- 14:39 -- V1.0
 
 Functional & functioned script. Parameters clear--ready for import into any python script!! (Readme updated as well).
+
+###6/15/2015 -- 7:34 -- V1.0.1
+
+Cleaning up repos to make presentable. Readme updated to specifically state that this is a functional script rather than an attempted package, at the moment.
